@@ -112,6 +112,10 @@
     margin-top: 5px;
 }
 
+.icon img:hover {
+    transform: scale(1.1);
+}
+
 
 /* Marginer */ 
 
@@ -392,6 +396,7 @@
   
 .button:hover {
     background-color: #e59400;
+    transform: scale(1.1);
 }
   
 .midd_main_image img {
@@ -399,9 +404,13 @@
     height: 446.63px;
 }
 
+.midd_main_image img:hover {
+    transform: scale(1.1);
+}
+
 /* MANA SHU YERINI QAYTA KO'RIB CHIQAMIZ 
 .polygone_red {
-    position: relative;
+    position: absolute;
     width: 16.02px;
     height: 15.57px;
     left: 1256.96px;
@@ -503,6 +512,11 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soyali effekt */
 }
 
+#btn_home {
+    width: 65px;
+    height: 78px;
+}
+
 .right_frame img {
     width: 40px;
     height: 40px;
@@ -512,7 +526,6 @@
 
 .right_frame img:hover {
     transform: scale(1.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .button_dn {
@@ -527,6 +540,6 @@
     transition: transform 0.2s, background-color 0.2s;
 }
 
-/* .button_dn img:hover {
+.button_dn img:hover {
     transform: rotate(20deg);
-} */
+}
