@@ -1,24 +1,79 @@
+/* B Task */
+
+/* Shunday function tuzing, u 1ta string parametrga ega bolsin, hamda osha stringda qatnashgan raqamlarni sonini bizga return qilsin.
+MASALAN countDigits("ad2a54y79wet0sfgb9") 7ni return qiladi. */
+
+// // Masala yechimi:
+
+// Declaretion function
+// function numberCount(data) {
+//     const dataSpl = data.split('');
+//     let count = 0;
+
+//     for (let i = 0; i < dataSpl.length; i++) {
+//         if (!isNaN(dataSpl[i])) { 
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+// console.log(numberCount('b82ybhjlll+=*&33f824fb'));
+
+
+// // Expression function
+// const numberCount = function(data) {
+//     const dataSpl = data.split('');
+//     let count = 0;
+
+//     for (let i = 0; i < dataSpl.length; i++) {
+//         if (!isNaN(dataSpl[i])) { 
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+// console.log(numberCount('b82ybhjlll+=*&33f824fb'));
+
+
+// Arrow function
+const numberCount = data => {
+    const dataSpl = data.split('');
+    let count = 0;
+
+    for (let i = 0; i < dataSpl.length; i++) {
+        if (!isNaN(dataSpl[i])) { 
+            count++;
+        }
+    }
+    return count;
+}
+console.log(numberCount('b82ybhjlll+=*&33f824fb'));
+
+
+/*  *****   *****   *****   *****   *****   *****    *****  *****   *****   *****   *****   *****   *****   *****   *****   *****   *****   */
+
+
 /* A Task */
 
 /* Shunday 2 parametrli function tuzing, hamda birinchi parametrdagi letterni ikkinchi parametrdagi sozdan qatnashga sonini return qilishi kerak boladi. 
 MASALAN countLetter("e", "engineer") 3ni return qiladi. */
 
-// Masala yechimi -1
+// // Masala yechimi:
 
 // Declaretion function
-function letterCount(letter, word) {
-    const lettersArray = word.split('');
-    let count = 0;
+// function letterCount(letter, word) {
+//     const lettersArray = word.split('');
+//     let count = 0;
 
-    for (let inputLetter of lettersArray) {
-        if (inputLetter === letter) {
-            count++;
-        }
-    }
-    return count;
-}; 
+//     for (let inputLetter of lettersArray) {
+//         if (inputLetter === letter) {
+//             count++;
+//         }
+//     }
+//     return count;
+// }; 
 
-console.log("kiritilingan harfdan jami:", letterCount("e", "engineer"), "ta bor");
+// console.log("kiritilingan harfdan jami:", letterCount("e", "engineer"), "ta bor");
 
 // // Expression function
 // const letterCount = function(letter, word) {
@@ -49,6 +104,10 @@ console.log("kiritilingan harfdan jami:", letterCount("e", "engineer"), "ta bor"
 // }; 
 
 // console.log("kiritilingan harfdan jami:", letterCount("e", "engineer"), "ta bor");
+
+
+/*  *****   *****   *****   *****   *****   *****    *****  *****   *****   *****   *****   *****   *****   *****   *****   *****   *****   */
+
 
 /* 22. Asynchronous functionlarni qo'llash */
 
@@ -110,6 +169,8 @@ console.log("kiritilingan harfdan jami:", letterCount("e", "engineer"), "ta bor"
 // }
 // run();
 
+
+/*  *****   *****   *****   *****   *****   *****    *****  *****   *****   *****   *****   *****   *****   *****   *****   *****   *****   */
 
 
 /* 21. NodeJS event loop va Callback functionlarni o'rganamiz */
