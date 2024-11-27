@@ -1,3 +1,20 @@
+/* C Task */
+
+/* Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
+MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true; */
+
+function compareWords(word1, word2) {
+    const sortedWord1 = word1.split('').sort().join('');
+    const sortedWord2 = word2.split('').sort().join('');
+
+    return sortedWord1 === sortedWord2;
+}
+
+console.log(compareWords("mitgroup", "gmtiprou"));
+
+
+/*  *****   *****   *****   *****   *****   *****    *****  *****   *****   *****   *****   *****   *****   *****   *****   *****   *****   */
+
 /* B Task */
 
 /* Shunday function tuzing, u 1ta string parametrga ega bolsin, hamda osha stringda qatnashgan raqamlarni sonini bizga return qilsin.
@@ -35,19 +52,19 @@ MASALAN countDigits("ad2a54y79wet0sfgb9") 7ni return qiladi. */
 // console.log(numberCount('b82ybhjlll+=*&33f824fb'));
 
 
-// Arrow function
-const numberCount = data => {
-    const dataSpl = data.split('');
-    let count = 0;
+// // Arrow function
+// const numberCount = data => {
+//     const dataSpl = data.split('');
+//     let count = 0;
 
-    for (let i = 0; i < dataSpl.length; i++) {
-        if (!isNaN(dataSpl[i])) { 
-            count++;
-        }
-    }
-    return count;
-}
-console.log(numberCount('b82ybhjlll+=*&33f824fb'));
+//     for (let i = 0; i < dataSpl.length; i++) {
+//         if (!isNaN(dataSpl[i])) { 
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+// console.log(numberCount('b82ybhjlll+=*&33f824fb'));
 
 
 /*  *****   *****   *****   *****   *****   *****    *****  *****   *****   *****   *****   *****   *****   *****   *****   *****   *****   */
