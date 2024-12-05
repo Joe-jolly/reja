@@ -1,10 +1,29 @@
+/* F task */
+/* Shunday findDoublers function tuzing, unga faqat bitta string argument pass bolib, agar stringda bir hil harf qatnashgan bolsa true, qatnashmasa false qaytarishi kerak.
+MASALAN: getReverse("hello") return true */
+
+const findDoublers = word => {
+  const countDoublers = word.split('').sort();
+  for (let i = 0; i < countDoublers.length - 1; i++) {
+    if (countDoublers[i] === countDoublers[i + 1]) {
+      return true;
+    }
+  }
+  return false;
+}
+console.log(findDoublers("hello"));
+console.log(findDoublers("MIT19"));
+
+
+/*  *****   *****   *****   *****   *****   *****    *****  *****   *****   *****   *****   *****   *****   *****   *****   *****   *****   */
+
 /* E task */
 
-function wordReverse(word) {
-  const dataReverse = word.split('').reverse().join('');
-  return dataReverse;
-}
-console.log(wordReverse("hello"));
+// function wordReverse(word) {
+//   const dataReverse = word.split('').reverse().join('');
+//   return dataReverse;
+// }
+// console.log(wordReverse("hello"));
 
 /*  *****   *****   *****   *****   *****   *****    *****  *****   *****   *****   *****   *****   *****   *****   *****   *****   *****   */
 
