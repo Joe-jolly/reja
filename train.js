@@ -1,18 +1,56 @@
+
+/* E task */
+/* Shunday function tuzingki unga integerlardan iborat array pass bolsin va function bizga osha arrayning eng katta qiymatiga tegishli 
+birinchi indexni qaytarsin.
+MASALAN: getHighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini.*/
+
+function findMaxIndex(arr) {
+  let max = arr[0];
+  let maxIndex = 0;
+
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i]; 
+      maxIndex = i;
+    }
+  }
+  return maxIndex;
+}
+
+console.log(findMaxIndex([2, 3, 12, 21, 8])); 
+
+// Quyida birinchi yozgan yechimim, yuqorida tekshirish va o'rganishlardan keyingi yechimim
+
+// function findMaxIndex() {
+//   const inputArray = prompt("Sonlarni vergul bilan ajratib array qiymatlarini kiriting");
+//   const numberArray = inputArray.split(',');
+// } 
+// for (let i = 0; i < numberArray.length; i++) {
+//   if (arr[i] > max) {
+//     max = arr[i];
+//   } 
+// } return indexOf (max);
+
+// console.log(inputArray(3, 5, 1, 5, 8));
+
+
+/*  *****   *****   *****   *****   *****   *****    *****  *****   *****   *****   *****   *****   *****   *****   *****   *****   *****   */
+
 /* F task */
 /* Shunday findDoublers function tuzing, unga faqat bitta string argument pass bolib, agar stringda bir hil harf qatnashgan bolsa true, qatnashmasa false qaytarishi kerak.
 MASALAN: getReverse("hello") return true */
 
-const findDoublers = word => {
-  const countDoublers = word.split('').sort();
-  for (let i = 0; i < countDoublers.length - 1; i++) {
-    if (countDoublers[i] === countDoublers[i + 1]) {
-      return true;
-    }
-  }
-  return false;
-}
-console.log(findDoublers("hello"));
-console.log(findDoublers("MIT19"));
+// const findDoublers = word => {
+//   const countDoublers = word.split('').sort();
+//   for (let i = 0; i < countDoublers.length - 1; i++) {
+//     if (countDoublers[i] === countDoublers[i + 1]) {
+//       return true;
+//     }
+//   }
+//   return false;
+// }
+// console.log(findDoublers("hello"));
+// console.log(findDoublers("MIT19"));
 
 
 /*  *****   *****   *****   *****   *****   *****    *****  *****   *****   *****   *****   *****   *****   *****   *****   *****   *****   */
